@@ -1,0 +1,471 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --apps: #5F6368;
+    --azul-google: #4185F4;
+    --vermelho-google: #EA4335;
+    --amarelo-google: #FBBD33;
+    --verde-google: #4EA853;
+    --font-color01: #212121;
+    --font-color02: #3C4043;
+    --background-bloco: #F8F9FA;
+    --separador-footer: #DADCE0;
+    --background-footer: #F2F2F2;
+}
+
+body {
+    background-image: url('../images/galaxy.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.azul-google {
+    color: var(--azul-google);
+}
+
+.vermelho-google {
+    color: var(--vermelho-google);
+}
+
+.amarelo-google {
+    color: var(--amarelo-google);
+}
+
+.verde-google {
+    color: var(--verde-google);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    background-color: black;
+}
+
+header .container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-especial-mobile {
+    display: none;
+}
+
+.menu nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu nav ul li {
+    list-style: none;
+}
+
+.menu nav ul a {
+    text-decoration: none;
+    font-size: 0.8em;
+    /* color: var(--font-color01); */
+    color: white;
+}
+
+.menu ul a:hover {
+    text-decoration: underline;
+}
+
+#li-gmail {
+    margin-right: 16px;
+}
+
+#li-imagem {
+    margin-right: 31px;
+}
+
+#li-app {
+    margin-right: 24px;
+    border-radius: 20px;
+
+}
+
+#li-app li {
+    display: flex;
+    max-width: 16px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+
+#li-app:hover {
+    background-color: var(--background-footer)
+}
+
+#li-foto {
+    margin-right: 18px;
+}
+
+#li-foto li {
+    border-radius: 10px;
+}
+
+#li-foto li:hover {
+    box-shadow: 0px 0px 10px rgb(115, 162, 243);
+}
+
+.circle-app {
+    height: 4px;
+    width: 4px;
+    background-color: var(--apps);
+    border-radius: 2px;
+}
+
+.foto-google {
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/casamento-lucas&larissa.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+#geral {
+    height: calc(100vh - 239px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#geral #conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo .logo-google {
+    margin-bottom: 20px;
+}
+
+.campo-pesquisa {
+    border: 1px solid black;
+    width: 584px;
+    height: 45px;
+    display: flex;
+    border: 0.001em solid #DFE1E5;
+    border-radius: 40px;
+}
+
+/* .campo-pesquisa {
+    width: 584px;
+    height: 48px;
+} */
+
+.icon-search,
+.teclado,
+.mic,
+.lens {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-search {
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.input-search {
+    flex: 9;
+}
+
+.campo-pesquisa:hover {
+    box-shadow: 0px 0px 5px rgb(255, 255, 255)
+}
+
+.input-search input {
+    width: 100%;
+    border: none;
+    height: 100%;
+}
+
+.input-search input:focus {
+    border: none;
+    outline: none;
+    caret-color: black;
+    caret-shape: block;
+}
+
+.btns {
+    margin-top: 29px;
+}
+
+.bt-google {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: none;
+    background-color: var(--background-bloco);
+    margin-right: 12px;
+}
+
+.bt-google:hover {
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+footer {
+    height: 94px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 85px;
+    background-color: var(--background-footer);
+    background-color: black;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.f1 {
+    color: white;
+}
+
+.f1,
+.f2 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-size: 0.9em;
+    padding-left: 31px;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul a {
+    text-decoration: none;
+    margin-right: 31px;
+    color: white;
+}
+
+footer ul a:hover {
+    text-decoration: underline;
+}
+
+.f2 {
+    border-top: 1px solid var(--separador-footer);
+    justify-content: space-between;
+}
+
+
+.mr-2 {
+    margin-right: 2px;
+}
+
+.mt-2 {
+    margin-top: 2px;
+}
+
+.mnb1 {
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.mnb2 {
+    display: flex;
+    align-items: center;
+}
+
+.mnb2 #li-foto {
+    list-style: none;
+}
+
+.bar {
+    height: 3px;
+    background-color: white;
+}
+
+.mnb1 ul {
+    display: flex;
+}
+
+.mnb1 li {
+    list-style: none;
+}
+
+.mnb1 ul a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.mnb1 ul a .active-mobile {
+    border-bottom: 1px solid white;
+}
+
+.menu-especial-mobile {
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    height: 100%;
+    width: 240px;
+    flex-direction: column;
+}
+
+.title {
+    max-width: 200px;
+    margin-top: 10px;
+    font-size: 300;
+}
+
+.title h1 {
+    font-size: 1em;
+    margin-left: 10px;
+
+}
+
+.title img {
+    width: 20px;
+    height: 20px;
+}
+
+.opcao {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.descricao-opcao {
+    margin-left: 10px;
+}
+
+.opcao img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-especial-mobile .title {
+    display: flex;
+    align-items: center;
+}
+
+.texto-descricao {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.acao-descricao {
+    color: rgb(164, 164, 164);
+    margin-top: 4px;
+}
+
+.historico {
+    margin-top: 10px;
+    border-top: 1px solid gray;
+    padding-top: 15px;
+}
+
+.pt2 {
+    border-top: 1px solid rgba(128, 128, 128, 0.442);
+    padding-top: 20px;
+}
+
+.opcao ul {
+    display: flex;
+}
+
+.opcao ul a {
+    font-size: 0.8em;
+    padding: 10px;
+    text-decoration: none;
+    color: rgba(128, 128, 128, 0.548);
+}
+
+@media screen and (max-width:768px) {
+
+    body {
+        background-size: inherit;
+        background-position: center;
+    }
+
+    .menu nav ul {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    header .container {
+        justify-content: center;
+    }
+
+    #geral {
+        height: calc(100vh - 390px);
+    }
+
+    .logo-google {
+        width: 225px;
+    }
+
+    .campo-pesquisa {
+        width: 326px;
+        height: 40px;
+    }
+
+    .teclado,
+    .mic,
+    .btns {
+        display: none;
+    }
+
+    footer {
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    footer .list1 ul,
+    footer .list2 ul {
+        flex-wrap: wrap;
+    }
+
+}
